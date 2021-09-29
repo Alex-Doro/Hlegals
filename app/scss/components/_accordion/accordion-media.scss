@@ -1,0 +1,15 @@
+@media (min-width: 992px) {
+
+    .successful-cases__accordion .accordion-button:first-child {
+            height: 100%;
+        }
+
+    .accordion-body {
+        padding: 40px 225px 40px 225px;
+    }
+
+    .accordion-collapse.desktop {
+        visibility: visible;
+        position: static;
+    }
+}   

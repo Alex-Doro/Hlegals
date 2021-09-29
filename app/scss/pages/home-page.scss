@@ -1,0 +1,219 @@
+// Main configuration
+@import "./../index.scss";
+
+@import "./../components/_carousel";
+@import "./../components/_team-carousel";
+@import "./../components/_accordion";
+
+.hero {
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    padding-bottom: 80px;
+}
+
+.header {
+    color: $greyTextColor;
+    padding-top: 20px;
+
+    &__language-btn {
+        color: $greyTextColor;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &--active {
+            background-color: $accentColor;
+            color: #ffffff;
+        }
+
+        &:hover {
+            background-color: #EDEDF7;
+            color: $greyTextColor;
+        }
+    }
+}
+
+.nav-link {
+    color: #ffffff;
+
+    &:hover {
+        color: $accentColor
+    }
+}
+
+.hero__desc {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 55px;
+    min-height: 610px;
+    background-image: 
+    url('./../images/hero/hero-long-leg-shade.svg'),
+    url('./../images/hero/hero-long-leg.svg');
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &__title {
+        position: relative;
+        color: #ffffff;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        z-index: 2;
+        max-width: 500px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__shade {
+        position: absolute;
+    }
+}
+
+.hero__btn-scroll--down {
+    border: 1px solid white;
+    width: 42px;
+    height: 42px;
+    background-image: url('./../images/hero/hero-btn-scroll-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.link-to-page {
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+
+    svg path {
+        stroke: $activeColor;
+    }
+
+    &--services {
+        opacity: 0.5;
+        color: white;
+        padding-left: 10.5px;
+
+        svg path {
+            stroke: white;
+        }
+    }
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    &:hover svg path {
+        stroke: $accentColor;
+    }
+}
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-left: 10.5px;
+}
+
+.services {
+    position: relative;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        height: 10px;
+        background-color: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+    
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        height: 10px;
+        background-color: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
+.services__card {
+    &__title {
+        color: $activeColor;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__text {
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+}
+
+@media(min-width: 992px) {
+    .logo {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+
+    .header {
+        font-size: 16px;
+        color: #ffffff;
+
+        &__language-btn {
+            color: #ffffff;
+        }
+    }
+
+    .bullet {
+        font-weight: bold;
+    }
+
+    .hero__desc {
+        background-image:
+        url('./../images/hero/hero-long-leg-shade.svg'),
+        url('./../images/hero/hero-long-leg.svg'),
+        url('./../images/hero/hero-long-leg-background.svg');
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: bottom;
+        padding-top: 170px;
+    }
+
+    .section__title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .services {
+        padding-bottom: 80px;
+    }
+}

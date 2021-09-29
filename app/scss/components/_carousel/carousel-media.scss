@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+    .carousel__slide__title {
+        @include textRedGradient;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel__slide {
+
+        &__title {
+            cursor: pointer;
+            text-align: end;
+            -webkit-text-fill-color: initial;
+            color: $greyTextColor;
+            font-size: 30px;
+            line-height: 38px;
+            font-weight: 500;
+            text-transform: none;
+
+            &:hover,
+            &.active {
+                @include textRedGradient
+            }
+        }
+    }
+
+    .carousel-indicators {
+        margin: 0;
+    }
+}

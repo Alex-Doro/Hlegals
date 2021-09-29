@@ -1,0 +1,29 @@
+.carousel-inner--team {
+    background-color: $greyBgColor;
+    border-radius: 12px;
+    color: $greyTextColor;
+    line-height: 22px;
+}
+
+.team-carousel {
+    &__name {
+        font-size: 18px;
+    }
+
+    &__position {
+        font-size: 16px;
+    }
+
+    &__img--mobile {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__img--desktop {
+        object-fit: cover;
+        width: 100%;
+        margin: -42px 40px -42px -42px;
+    }
+}
