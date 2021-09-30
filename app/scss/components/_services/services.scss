@@ -1,0 +1,86 @@
+.link-to-page {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    svg path {
+        stroke: $activeColor;
+    }
+
+    &--services {
+        opacity: 0.5;
+        color: white;
+        padding-left: 10.5px;
+
+        svg path {
+            stroke: white;
+        }
+    }
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    &:hover svg path {
+        stroke: $accentColor;
+    }
+}
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-left: 10.5px;
+}
+
+.services {
+    position: relative;
+    background: linear-gradient(210.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        height: 10px;
+        background-color: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+    
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        height: 10px;
+        background-color: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
+.services__card {
+    &__title {
+        color: $activeColor;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__text {
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+}

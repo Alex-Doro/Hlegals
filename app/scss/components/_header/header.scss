@@ -1,0 +1,33 @@
+.header {
+    color: $greyTextColor;
+    padding-top: 20px;
+
+    &__language-btn {
+        color: $greyTextColor;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &--active {
+            background-color: $accentColor;
+            color: #ffffff;
+        }
+
+        &:hover {
+            background-color: #EDEDF7;
+            color: $greyTextColor;
+        }
+    }
+}
+
+.nav-link {
+    color: #ffffff;
+
+    &:hover {
+        color: $accentColor
+    }
+}

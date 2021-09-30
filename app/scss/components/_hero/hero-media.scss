@@ -1,0 +1,13 @@
+@media(min-width: 992px) {
+
+    .hero__desc {
+        background-image:
+        url('./../images/hero/hero-long-leg.svg'),
+        url('./../images/hero/hero-long-leg-background.svg');
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: bottom;
+        padding-top: 170px;
+    }
+}

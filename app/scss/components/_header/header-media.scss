@@ -1,0 +1,20 @@
+@media(min-width: 992px) {
+    .logo {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+
+    .header {
+        font-size: 16px;
+        color: #ffffff;
+
+        &__language-btn {
+            color: #ffffff;
+        }
+    }
+
+    .bullet {
+        font-weight: bold;
+    }
+}

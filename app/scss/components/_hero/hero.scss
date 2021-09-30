@@ -1,0 +1,61 @@
+.hero {
+    position: relative;
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+        pointer-events: none;
+    }
+}
+
+.hero__desc {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 55px;
+    min-height: 610px;
+    background-image: url('./../images/hero/hero-long-leg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &__title {
+        position: relative;
+        color: #ffffff;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        z-index: 2;
+        max-width: 500px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__shade {
+        position: absolute;
+    }
+}
+
+.hero__btn-scroll--down {
+    border: 1px solid white;
+    width: 42px;
+    height: 42px;
+    background-image: url('./../images/hero/hero-btn-scroll-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
