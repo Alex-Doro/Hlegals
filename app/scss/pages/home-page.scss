@@ -1,13 +1,27 @@
 // Main configuration
 @import "./../index.scss";
-
 @import "./../components/_carousel";
 @import "./../components/_team-carousel";
 @import "./../components/_accordion";
+@import "./../components/_partners-section";
+@import "./../components/_publications";
+@import "./../components/_footer/";
 
 .hero {
+    position: relative;
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding-bottom: 80px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+        pointer-events: none;
+    }
 }
 
 .header {
@@ -49,10 +63,8 @@
     margin-top: 100px;
     padding-top: 55px;
     min-height: 610px;
-    background-image: 
-    url('./../images/hero/hero-long-leg-shade.svg'),
-    url('./../images/hero/hero-long-leg.svg');
-    background-size: auto, cover;
+    background-image: url('./../images/hero/hero-long-leg.svg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -93,12 +105,14 @@
 }
 
 .link-to-page {
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 1px;
+    font-weight: 500;
 
     svg path {
         stroke: $activeColor;
@@ -133,7 +147,7 @@
 
 .services {
     position: relative;
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background: linear-gradient(210.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     padding-bottom: 20px;
 
@@ -198,7 +212,6 @@
 
     .hero__desc {
         background-image:
-        url('./../images/hero/hero-long-leg-shade.svg'),
         url('./../images/hero/hero-long-leg.svg'),
         url('./../images/hero/hero-long-leg-background.svg');
         max-width: 100%;

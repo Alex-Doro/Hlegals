@@ -1,0 +1,65 @@
+.footer {
+    padding-bottom: 50px;
+    background-color: $greyBgColor;
+    text-align: center;
+    
+    &__container {
+        position: relative;
+        padding-top: 20px;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            border-top: 2px solid #E6E6F0;
+            pointer-events: none;
+    }
+
+    }
+
+    &__address {
+        color: $regularColor;
+        font-weight: 600;
+    }
+
+    &__map {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $activeColor;
+        font-weight: 600;
+    }
+
+    &__phone {
+        color: $regularColor;
+        font-weight: 600;
+    }
+
+    &__email a {
+        color: $activeColor;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+        font-weight: 500; 
+    }
+
+    &__copyright {
+        color: $greyTextColor;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .bullet {
+        color: $greyTextColor;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

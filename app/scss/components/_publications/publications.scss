@@ -1,0 +1,56 @@
+.publications {
+    position: relative;
+    background-color: $greyBgColor;
+
+    &__btn {
+        @include activeButton;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__card {
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 40px;
+
+        &__title {
+            color: $activeColor;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 20px 20px 10px 20px;
+            margin: 0;
+        }
+
+        &__date {
+            color: $greyTextColor;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0 20px 20px 20px;
+            margin: 0;
+        }
+
+        &__text {
+            position: relative;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0 20px 20px 20px;
+            margin-top: 20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                top: -20px;
+                border: 2px solid #E6E6F0;
+            }
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}

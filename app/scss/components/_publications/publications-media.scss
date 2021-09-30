@@ -1,0 +1,26 @@
+@media (min-width: 992px) {
+    .publications {
+        max-height: 900px;
+        overflow: hidden;
+
+        &__btn {
+            @include activeButton;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+            pointer-events: none;
+        }
+    }
+}

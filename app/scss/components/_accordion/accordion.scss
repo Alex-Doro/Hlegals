@@ -2,6 +2,11 @@
     border: 1px solid white;
 }
 
+.accordion-body {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .successful-cases__accordion .accordion-button:not(.collapsed) {
     box-shadow: none;
     background-color: $greyBgAltColor;
@@ -41,7 +46,7 @@
         line-height: 17px;
         font-weight: 600;
         width: 100%;
-        border: 1px solid white;
+        border-bottom: 1px solid white;
         background-color: $greyBgColor;
         padding: 20px;
         margin-bottom: 0;
