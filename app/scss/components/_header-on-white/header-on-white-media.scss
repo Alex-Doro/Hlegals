@@ -16,12 +16,12 @@
     
             &::before {
                 left: -8px;
-                content: url('/app/images/header/header-title-desktop-before.svg');
+                content: url('./../images/header/header-title-desktop-before.svg');
             }
     
             &::after {
                 right: -30px;
-                content: url('/app/images/header/header-title-desktop-after.svg');
+                content: url('./../images/header/header-title-desktop-after.svg');
             }
         }
     }
