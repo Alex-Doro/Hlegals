@@ -24,10 +24,20 @@
     }
 }
 
+.tel-number {
+    font-weight: 500;
+}
+
 .nav-link {
-    color: #ffffff;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 0;
+    border-bottom: 2px solid transparent;
 
     &:hover {
-        color: $accentColor
+        color: $accentColor;
+        border-bottom: 2px solid $accentColor;
     }
 }

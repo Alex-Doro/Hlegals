@@ -1,0 +1,32 @@
+@media(min-width: 992px) {
+    .logo {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+
+    .header {
+        font-size: 16px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 45px;
+            padding: 13px;
+            margin-left: 10px;
+    
+            &::before {
+                left: -8px;
+                content: url('/app/images/header/header-title-desktop-before.svg');
+            }
+    
+            &::after {
+                right: -30px;
+                content: url('/app/images/header/header-title-desktop-after.svg');
+            }
+        }
+    }
+
+    .bullet {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,65 @@
+.about-us__general-info {
+    margin-top: 20px;
+    padding-bottom: 40px;
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__second-col {
+        border-top: 4px solid #E6E6F0;
+        padding-top: 15px;
+    }
+
+    &__subtitle {
+        @include textRedGradient;
+        display: inline;
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        img {
+            padding-right: 10.5px;
+        }
+    }
+
+    &__alt-text {
+        color: $regularColor;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+}
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+}
+
+.our-team-photo {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    height: 290px;
+    background-image: url('/app/images/about-us/team.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}

@@ -1,0 +1,64 @@
+.header {
+    color: $greyTextColor;
+    padding-top: 20px;
+
+    &__title {
+        position: relative;
+        display: inline;
+        font-size: 19px;
+        line-height: 22px;
+        color: $regularColor;
+        padding: 13px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            content: url('/app/images/header/header-title-mobile-before.svg');
+        }
+
+        &::after {
+            position: absolute;
+            right: -11px;
+            content: url('/app/images/header/header-title-mobile-after.svg');
+        }
+    }
+
+    &__language-btn {
+        color: $greyTextColor;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &--active {
+            background-color: $accentColor;
+            color: #ffffff;
+        }
+
+        &:hover {
+            background-color: #EDEDF7;
+            color: $greyTextColor;
+        }
+    }
+}
+
+.tel-number {
+    font-weight: 500;
+}
+
+.nav-link {
+    color: $activeColor;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 0;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        color: $accentColor;
+        border-bottom: 2px solid $accentColor;
+    }
+}
