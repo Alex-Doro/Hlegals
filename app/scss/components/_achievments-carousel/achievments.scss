@@ -1,6 +1,7 @@
 .achievments {
     background-color: $greyBgColor;
-    padding: 30px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     &__title {
         text-align: center;
@@ -17,6 +18,10 @@
 
 .carousel {
     margin-top: 30px;
+
+    &-inner {
+        transform: scale(0.75);
+    }
 }
 
 .carousel-indicators {

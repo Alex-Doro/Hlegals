@@ -1,0 +1,74 @@
+.team-member {
+    &-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+
+    &__image {
+        width: 100%
+    }
+
+    &__position {
+        color: $greyTextColor;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__email,
+    &__linkedin {
+        color: $activeColor;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__email {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 26px;
+
+        &__title {
+            color: $regularColor;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}
+
+.team-member__desc-container {
+    padding-top: 20px;
+    margin-top: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-top: 4px solid #E6E6F0;
+        pointer-events: none;
+    }
+}
+
+.bullet {
+    color: $greyTextColor;
+    font-weight: bold;
+}
+
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}

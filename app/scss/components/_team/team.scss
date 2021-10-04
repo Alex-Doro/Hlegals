@@ -1,0 +1,45 @@
+.team {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.team-member {
+
+    &__image {
+        width: 100%;
+    }
+
+    &__name {
+        color: $regularColor;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+
+    &__position{
+        color: $greyTextColor;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__btn {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: $greyBgColor;
+        background-image: url('./../images/team/button-arrow.svg');
+        background-position-y: center;
+        background-position-x: 13px;
+        background-repeat: no-repeat;
+        border-radius: 50%
+    }
+}
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-left: 10.5px;
+    margin-bottom: 20px;
+}

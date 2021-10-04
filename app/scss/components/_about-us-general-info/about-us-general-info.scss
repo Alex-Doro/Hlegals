@@ -8,8 +8,18 @@
     }
 
     &__second-col {
-        border-top: 4px solid #E6E6F0;
+        position: relative;
         padding-top: 15px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 0;
+            height: 4px;
+            background-color: #E6E6F0;
+        }
     }
 
     &__subtitle {

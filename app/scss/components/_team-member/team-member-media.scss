@@ -1,0 +1,24 @@
+@media (min-width: 992px) { 
+
+    .team-member {
+        &-section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &__email {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }   
+
+    .section__title {
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .team-member__desc-container {
+        padding-top: 40px;
+    }
+}
