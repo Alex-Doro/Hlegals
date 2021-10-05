@@ -2,12 +2,29 @@
     .logo {
         position: absolute;
         top: 50px;
-        left: 60px;
+        left: 10px;
     }
 
     .header {
         font-size: 16px;
         color: #ffffff;
+
+        &__title {
+            font-size: 38px;
+            line-height: 45px;
+            padding: 13px;
+            margin-left: 10px;
+    
+            &::before {
+                left: -8px;
+                content: url('./../images/header/header-title-desktop-before.svg');
+            }
+    
+            &::after {
+                right: -30px;
+                content: url('./../images/header/header-title-desktop-after.svg');
+            }
+        }
 
         &__language-btn {
             color: #ffffff;

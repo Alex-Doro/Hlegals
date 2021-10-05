@@ -64,5 +64,6 @@
 
     &.active {
         border-bottom: 2px solid $accentColor;
+        pointer-events: none;
     }
 }

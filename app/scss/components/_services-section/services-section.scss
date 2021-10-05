@@ -44,7 +44,6 @@
     background: linear-gradient(210.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     padding-bottom: 20px;
-    padding-top: 40px;
 
     &::before {
         content: '';
@@ -71,6 +70,16 @@
 }
 
 .services__card {
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+
+    &__link {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+    }
     &__title {
         color: $activeColor;
         font-size: 18px;
@@ -82,5 +91,9 @@
         font-size: 16px;
         line-height: 22px;
         margin-top: 10px;
+    }
+
+    &:hover .services__card__title{
+        color: $accentColor;
     }
 }
