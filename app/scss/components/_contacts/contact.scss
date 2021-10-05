@@ -1,0 +1,118 @@
+.contacts {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &__address {
+        position: relative;
+        color: $regularColor;
+        font-size: 21px;
+        line-height: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-top: 4px solid #E6E6F0;
+            pointer-events: none;
+        }
+    }
+
+    &__telephone {
+        color: $altColor;
+        font-size: 21px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        color: $activeColor;
+        font-size: 21px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    &__facebook-link {
+        position: relative;
+        color: $activeColor;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        img {
+            margin-right: 10px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            border-top: 4px solid #E6E6F0;
+            pointer-events: none;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        max-width: 1920px;
+    }
+
+    &__form {
+        background-color: $greyBgColor;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        input, 
+        textarea {
+            padding: 10px;
+            border-radius: 12px;
+            border: none;
+            margin-bottom: 20px;
+            resize: none;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: $greyTextColor;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px $greyTextColor;
+        }
+
+        &__title {
+            @include textRedGradient;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            color: $greyTextColor;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

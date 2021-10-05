@@ -7,7 +7,7 @@
         position: relative;
         padding-top: 20px;
         
-        &::before {
+        &.with-border::before {
             content: '';
             position: absolute;
             left: 10px;
