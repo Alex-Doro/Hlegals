@@ -4,6 +4,7 @@
 }
 
 .team-member {
+    position: relative;
 
     &__image {
         width: 100%;
@@ -29,9 +30,20 @@
         background-color: $greyBgColor;
         background-image: url('./../images/team/button-arrow.svg');
         background-position-y: center;
-        background-position-x: 13px;
+        background-position-x: 12px;
         background-repeat: no-repeat;
-        border-radius: 50%
+        border-radius: 50%;
+        border: none;
+    }
+
+    &__link {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+    }
+
+    &:hover .team-member__name {
+        color: $accentColor;
     }
 }
 

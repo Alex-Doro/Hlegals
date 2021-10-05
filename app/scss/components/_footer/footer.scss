@@ -34,6 +34,10 @@
         text-decoration: none;
         color: $activeColor;
         font-weight: 600;
+        
+        &:hover {
+            color: $accentColor;
+        }
     }
 
     &__phone {
@@ -46,7 +50,11 @@
         font-size: 16px;
         line-height: 19px;
         text-decoration: none;
-        font-weight: 500; 
+        font-weight: 500;
+        
+        &:hover {
+            color: $accentColor;
+        }
     }
 
     &__copyright {
@@ -61,5 +69,9 @@
         font-weight: 800;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .facebook-link:hover svg path{
+        fill: $accentColor;
     }
 }

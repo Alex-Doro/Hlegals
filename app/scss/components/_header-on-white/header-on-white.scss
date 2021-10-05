@@ -60,6 +60,9 @@
     &:hover,
     &.active {
         color: $accentColor;
+    }
+
+    &.active {
         border-bottom: 2px solid $accentColor;
     }
 }

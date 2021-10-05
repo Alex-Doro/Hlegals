@@ -20,6 +20,10 @@
         text-decoration: none;
         font-size: 16px;
         line-height: 19px;
+
+        &:hover {
+            color: $accentColor;
+        }
     }
 
     &__email {

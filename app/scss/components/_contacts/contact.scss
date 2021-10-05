@@ -33,6 +33,10 @@
         font-size: 21px;
         line-height: 30px;
         text-decoration: none;
+
+        &:hover {
+            color: $accentColor;
+        }
     }
 
     &__facebook-link {
@@ -48,8 +52,16 @@
         margin-top: 40px;
         margin-bottom: 40px;
 
-        img {
+        svg {
             margin-right: 10px;
+        }
+
+        &:hover {
+            color: $accentColor;
+        }
+
+        &:hover svg path {
+            fill: $accentColor;
         }
 
         &::before {
