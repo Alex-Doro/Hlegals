@@ -1,0 +1,19 @@
+@media (min-width: 992px) {
+    .service-item__hero {
+        padding-bottom: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item__list {
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-item {
+            margin-bottom: 20px;
+        }
+    }
+}

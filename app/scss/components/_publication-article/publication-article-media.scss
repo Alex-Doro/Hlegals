@@ -1,0 +1,22 @@
+@media (min-width: 992px) {
+    .publication-article {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__title {
+            margin-top: 40px;
+
+            &::after {
+                bottom: -65px;
+            }
+        }
+
+        &__date {
+            padding-bottom: 40px;
+        }
+
+        &__social {
+            justify-content: start;
+        }
+    }
+}

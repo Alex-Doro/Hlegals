@@ -11,136 +11,138 @@
     <title>Team member</title>
 </head>
 <body>
-        <!-- Header -->
-        <div class="container position-relative justify-content-center pt-lg-4">
-            <header class="header">
-                <div class="d-flex justify-content-between justify-content-lg-end pb-lg-2">
-                    <div>
-                        <button class="btn header__language-btn header__language-btn--active" type="button">ук</button>
-                        <button class="btn header__language-btn" type="button">ру</button>
-                        <button class="btn header__language-btn" type="button">en</button>
+    <!-- Header -->
+    <div class="container position-relative justify-content-center pt-lg-4">
+        <header class="header">
+            <div class="d-flex justify-content-between justify-content-lg-end pb-lg-2">
+                <div>
+                    <button class="btn header__language-btn header__language-btn--active" type="button">ук</button>
+                    <button class="btn header__language-btn" type="button">ру</button>
+                    <button class="btn header__language-btn" type="button">en</button>
+                </div>
+                <span class="header__address d-none d-lg-block"><span class="bullet p-2">&#8226</span>Одеса, Адміральський пр., 3<span class="bullet p-2">&#8226</span></span>
+                <div class="tel-number">+38 (050) 390 15 95<span class="bullet p-2 d-none d-lg-inline">&#8226</span></div>
+                <a href="https://facebook.com" class="social-link d-none d-lg-inline-block" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" fill="#B3B3BA"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="d-flex justify-content-between justify-content-lg-end align-items-center">
+                <a href="./index.html" class="navbar-brand logo">
+                    <img src="./images/header/header-logo-mobile-on-white.svg" alt="hlegals logo" class="logo--mobile d-lg-none">
+                    <img src="./images/header/header-logo-desktop-on-white.svg" alt="hlegals logo" class="logo--desktop d-none d-lg-inline">
+                    <h1 class="header__title">команда</h1>
+                </a>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="btn hamburger d-block d-lg-none">
+                        <img src="./images/header/hamburger-on-white.svg" alt="menu">
+                    </button>
+                    <ul class="navbar-nav collapse navbar-collapse ">
+                        <li class="nav-item">
+                            <a href="./about-us.html" class="nav-link">про нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./services.html" class="nav-link">послуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./team.html" class="nav-link active">команда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./publications.html" class="nav-link">публікації</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacts.html" class="nav-link">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- Team Member Section -->
+    <section class="team-member-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="./images/team/oleksandr-oleksandrovskiy2.png" alt="Олександр Олександровський" class="team-member__image">
+                </div>
+                <div class="col-lg-7">
+                    <div class="col">
+                        <h2 class="section__title">
+                            Олександр Олександровський
+                        </h2>
                     </div>
-                    <span class="header__address d-none d-lg-block"><span class="bullet p-2">&#8226</span>Одеса, Адміральський пр., 3<span class="bullet p-2">&#8226</span></span>
-                    <div class="tel-number">+38 (050) 390 15 95<span class="bullet p-2 d-none d-lg-inline">&#8226</span></div>
-                    <a href="https://facebook.com" class="social-link d-none d-lg-inline-block">
-                        <img src="./images/header/facebook-logo-on-white.svg" alt="facebook page">
-                    </a>
+                    <div class="col team-member__general-info d-lg-flex align-items-center">
+                        <p class="team-member__position mb-0">
+                            Керуючий партнер
+                        </p>
+                        <span class="bullet p-2 d-none d-lg-inline">&#8226</span>
+                        <a href="" class="team-member__email d-block">
+                            oleksandrovskiy@hlegals.net
+                        </a>
+                        <span class="bullet p-2 d-none d-lg-inline">&#8226</span>
+                        <a href="https://www.linkedin.com" class="team-member__linkedin d-block">
+                            Профіль в LinkedIn
+                        </a>
+                    </div>
+                    <div class="col team-member__desc-container position-relative">
+                        <p class="team-member__desc">
+                            Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.
+                            <br><br>
+                            Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів, контейнерних ліній, а також міжнародних банків і клубів P & I.
+                        </p>
+                        <p class="team-member__desc__title">
+                            Освіта
+                        </p>
+                        <p class="team-member__desc">
+                            Національний університет «Одеська юридична академія», магістр права.
+                        </p>
+                        <p class="team-member__desc__title">
+                            Досвід роботи
+                        </p>
+                        <p class="team-member__desc mb-0">
+                            До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України
+                        </p>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between justify-content-lg-end align-items-center">
-                    <a href="./index.html" class="navbar-brand logo">
-                        <img src="./images/header/header-logo-mobile-on-white.svg" alt="hlegals logo" class="logo--mobile d-lg-none">
-                        <img src="./images/header/header-logo-desktop-on-white.svg" alt="hlegals logo" class="logo--desktop d-none d-lg-inline">
-                        <h1 class="header__title">команда</h1>
-                    </a>
-                    <nav class="navbar navbar-expand-lg">
-                        <button class="btn hamburger d-block d-lg-none">
-                            <img src="./images/header/hamburger-on-white.svg" alt="menu">
-                        </button>
-                        <ul class="navbar-nav collapse navbar-collapse ">
-                            <li class="nav-item">
-                                <a href="./about-us.html" class="nav-link">про нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./services.html" class="nav-link">послуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./team.html" class="nav-link active">команда</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">публікації</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./contacts.html" class="nav-link">контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            </div>
         </div>
-        <!-- Team Member Section -->
-        <section class="team-member-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <img src="./images/team/oleksandr-oleksandrovskiy2.png" alt="Олександр Олександровський" class="team-member__image">
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="row">
+                <div class="col col-lg-6 ps-lg-4">
+                    <div class="col footer__content-row">
+                        <div class="footer__address pb-2 pb-lg-0">Одеса, Адміральський пр., 3</div>
+                        <span class="bullet d-none d-lg-block">&#8226</span>
+                        <a href="#" class="footer__map">
+                            Подивитися на мапі
+                        </a>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="col">
-                            <h2 class="section__title">
-                                Олександр Олександровський
-                            </h2>
+                    <div class="col footer__content-row">
+                        <a href="https://facebook.com" class="d-block py-4 facebook-link" target="_blank">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                            </svg>
+                        </a>
+                        <div class="footer__phone">
+                            <span class="bullet d-none d-lg-inline">&#8226</span>	
+                            +38 (050) 390 15 91
                         </div>
-                        <div class="col team-member__general-info d-lg-flex align-items-center">
-                            <p class="team-member__position mb-0">
-                                Керуючий партнер
-                            </p>
-                            <span class="bullet p-2 d-none d-lg-inline">&#8226</span>
-                            <a href="" class="team-member__email d-block">
-                                oleksandrovskiy@hlegals.net
+                        <div class="footer__email py-4 py-lg-0">
+                            <span class="bullet d-none d-lg-inline">&#8226</span>
+                            <a href="#">
+                                contact@hlegals.net
                             </a>
-                            <span class="bullet p-2 d-none d-lg-inline">&#8226</span>
-                            <a href="https://www.linkedin.com" class="team-member__linkedin d-block">
-                                Профіль в LinkedIn
-                            </a>
-                        </div>
-                        <div class="col team-member__desc-container position-relative">
-                            <p class="team-member__desc">
-                                Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.
-                                <br><br>
-                                Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів, контейнерних ліній, а також міжнародних банків і клубів P & I.
-                            </p>
-                            <p class="team-member__desc__title">
-                                Освіта
-                            </p>
-                            <p class="team-member__desc">
-                                Національний університет «Одеська юридична академія», магістр права.
-                            </p>
-                            <p class="team-member__desc__title">
-                                Досвід роботи
-                            </p>
-                            <p class="team-member__desc mb-0">
-                                До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container footer__container">
-                <div class="row">
-                    <div class="col col-lg-6 ps-lg-4">
-                        <div class="col footer__content-row">
-                            <div class="footer__address pb-2 pb-lg-0">Одеса, Адміральський пр., 3</div>
-                            <span class="bullet d-none d-lg-block">&#8226</span>
-                            <a href="#" class="footer__map">
-                                Подивитися на мапі
-                            </a>
-                        </div>
-                        <div class="col footer__content-row">
-                            <a href="https://facebook.com" class="d-block py-4 facebook-link">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                                </svg>
-                            </a>
-                            <div class="footer__phone">
-                                <span class="bullet d-none d-lg-inline">&#8226</span>	
-                                +38 (050) 390 15 91
-                            </div>
-                            <div class="footer__email py-4 py-lg-0">
-                                <span class="bullet d-none d-lg-inline">&#8226</span>
-                                <a href="#">
-                                    contact@hlegals.net
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 footer__copyright">
-                        © 2021 ТОВ Юридична компанія «HLEGALS»
-                    </div>
+                <div class="col-12 col-lg-6 footer__copyright">
+                    © 2021 ТОВ Юридична компанія «HLEGALS»
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>

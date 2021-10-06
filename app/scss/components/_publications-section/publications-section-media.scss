@@ -1,9 +1,9 @@
 @media (min-width: 992px) {
-    .publications {
+    .publications.section {
         max-height: 900px;
         overflow: hidden;
 
-        &__btn {
+        .publications__btn {
             @include activeButton;
             position: absolute;
             bottom: 40px;

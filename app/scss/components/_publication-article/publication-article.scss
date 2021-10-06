@@ -1,0 +1,108 @@
+.publication-article {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-width: 905px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+
+        &-container {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -45px;
+            height: 4px;
+            background-color: #E6E6F0;
+        }
+    }
+
+    &__date {
+        color: $greyTextColor;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        color: $altColor;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__ordered-list__item {
+        padding-left: 10px;
+        margin-bottom: 10px;
+
+        &::marker {
+            color: $accentColor;
+            font-weight: bold;
+        }
+    }
+
+    &__img {
+        max-width: 640px;
+
+        &__title {
+            color: $greyTextColor;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+    &__social {
+        position: relative;
+        margin-top: 60px;
+        padding-top: 20px;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -5px;
+            height: 4px;
+            background-color: #E6E6F0;
+        }
+
+        &-item {
+            display: block;
+            border-radius: 12px;
+            background-color: $greyBgColor;
+            object-position: center;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    }
+}

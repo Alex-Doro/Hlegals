@@ -67,3 +67,7 @@
         pointer-events: none;
     }
 }
+
+.social-link:hover svg path {
+    fill: $activeColor;
+}

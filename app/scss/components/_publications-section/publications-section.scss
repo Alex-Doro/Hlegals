@@ -10,9 +10,14 @@
     }
 
     &__card {
+        position: relative;
         background-color: white;
         border-radius: 8px;
         margin-bottom: 40px;
+
+        &:hover .publications__card__title {
+            color: $accentColor;
+        }
 
         &__title {
             color: $activeColor;
@@ -45,12 +50,60 @@
                 left: 20px;
                 right: 20px;
                 top: -20px;
-                border: 2px solid #E6E6F0;
+                height: 4px;
+                background-color: #E6E6F0;
             }
         }
 
         &__img {
             width: 100%;
         }
+
+        &__link {
+            position: absolute;
+            inset: 0;
+            z-index: 1000;
+        }
     }
+}
+
+.link-to-page {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    svg path {
+        stroke: $activeColor;
+    }
+
+    &--services {
+        opacity: 0.5;
+        color: white;
+        padding-left: 10.5px;
+
+        svg path {
+            stroke: white;
+        }
+    }
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    &:hover svg path {
+        stroke: $accentColor;
+    }
+}
+
+.section__title {
+    @include textRedGradient;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-left: 10.5px;
 }
