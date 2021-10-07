@@ -11,6 +11,46 @@
     <title>Services</title>
 </head>
 <body>
+    	<!-- Mobile Nav -->
+	<div class="mobile-nav__container">
+		<div class="mobile-nav">
+			<button type="button" class="mobile-nav__close-btn"></button>
+			<ul class="mobile-nav__list">
+				<li class="mobile-nav__list__item">
+					<a href="./about-us.html">про нас</a>
+				</li>
+				<li class="mobile-nav__list__item">
+					<a href="./services.html">послуги</a>
+				</li>
+				<li class="mobile-nav__list__item">
+					<a href="./team.html">команда</a>
+				</li>
+				<li class="mobile-nav__list__item">
+					<a href="./publications.html">публікації</a>
+				</li>
+				<li class="mobile-nav__list__item">
+					<a href="./contacts.html">контакти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+        <!-- Contact-us Popup -->
+    <div class="contacts__popup">
+        <form action="" method="GET" class="contacts__form">
+            <h2 class="contacts__form__title">
+                Ми хотіли б Вам допомогти
+            </h2>
+            <button class="contacts__popup__close-btn" type="button"></button>
+            <input type="text" placeholder="Iм’я" name="name">
+            <textarea name="" id="" cols="30" rows="7" placeholder="Повідомлення"></textarea>
+            <p class="contacts__form__subtitle">
+                Як вам відповісти?
+            </p>
+            <input type="text" name="telephone" placeholder="Номер телефона">
+            <input type="text" name="email" placeholder="Чи email">
+            <button class="contacts__popup__btn" type="submit">Надіслати запит</button>
+        </form>
+    </div>
         <!-- Header + Service Item -->
     <section class="service-item">
         <!-- Header -->
@@ -76,9 +116,7 @@
                         <br><br>
                         До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.
                     </p>
-                    <button class="service-item__btn">
-                        <a href="./contacts.html">Безкоштовна консультація</a>
-                    </button>
+                    <button class="service-item__btn">Безкоштовна консультація</button>
                 </div>
                 <div class="row service-item__desc">
                     <h3 class="service-item__list-title">
@@ -436,5 +474,7 @@
 		</div>
 	</footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/mobile-nav.js"></script>
 </body>
 </html>

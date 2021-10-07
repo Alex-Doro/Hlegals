@@ -1,3 +1,16 @@
+@media (min-width: 540px) {
+    .contacts {
+        &__form {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1001;
+            width: 540px;
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .service-item__hero {
         padding-bottom: 80px;

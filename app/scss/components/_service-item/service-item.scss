@@ -93,3 +93,42 @@
         }
     }
 }
+
+.contacts {
+    &__form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001;
+    }
+
+    &__popup {
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba($color: $regularColor, $alpha: 0.7);
+        z-index: 1000;
+        transition: 0.3s;
+
+        &__btn {
+            @include activeButton;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__close-btn {
+            position: absolute;
+            background-image: url('./../images/close-btn.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            right: 20px;
+            top: 20px;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}

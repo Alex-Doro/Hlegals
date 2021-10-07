@@ -78,7 +78,7 @@
     &__link {
         position: absolute;
         inset: 0;
-        z-index: 1000;
+        z-index: 2;
     }
     &__title {
         color: $activeColor;
