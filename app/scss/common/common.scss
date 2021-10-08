@@ -2,3 +2,8 @@
     font-family: $baseFont;
     font-size: 14px;
 }
+
+html,
+body {
+    overflow-x: hidden;
+}
